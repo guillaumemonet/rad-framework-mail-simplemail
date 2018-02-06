@@ -1,0 +1,49 @@
+{
+    "name": "rad/rad-framework-mail-simplemail",
+    "description": "Rest API Dedicated Framework.",
+    "authors": [
+        {
+            "name": "Guillaume Monet",
+            "email": "guillaume.monet@free.fr"
+        }
+    ],
+
+    "license": "MIT",
+
+    "autoload": {
+        "psr-4": {
+            "Rad\\": "src/Rad/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "rad/rad-framework-mail-simplemail",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/guillaumemonet/rad-framework-mail-simplemail.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Rad\\": "src/Rad/"
+                    }
+                }
+            }
+        }
+    ],
+    "require": {
+        "rad/rad-framework": "dev-master",
+        "rad/rad-framework-template-smarty": "dev-master"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Rad\\Composer\\Manager::installConfig"
+        ],
+        "post-update-cmd": [
+            "Rad\\Composer\\Manager::installConfig"
+        ]
+    }
+}
