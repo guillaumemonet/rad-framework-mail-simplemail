@@ -1,0 +1,9 @@
+{
+    "simplemail": {
+        "classname": "Rad\\Mail\\SimpleMailHandler",
+        "config": {
+
+        }
+    }
+}
+            
