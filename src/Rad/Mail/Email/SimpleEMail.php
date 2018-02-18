@@ -26,6 +26,8 @@
 
 namespace Rad\Mail\Email;
 
+use Rad\Mail\EmailInterface;
+
 /**
  * Description of EMailObject
  *
@@ -163,23 +165,23 @@ class SimpleEMail implements EmailInterface {
         
     }
 
-    public function addBCC(string $bcc, string $alias = null): \Rad\Mail\EmailInterface {
+    public function addBCC(string $bcc, string $alias = null): EmailInterface {
         
     }
 
-    public function addCC(string $cc, string $alias = null): \Rad\Mail\EmailInterface {
+    public function addCC(string $cc, string $alias = null): EmailInterface {
         
     }
 
-    public function addTo(string $to, string $alias = null): \Rad\Mail\EmailInterface {
+    public function addTo(string $to, string $alias = null): EmailInterface {
         
     }
 
-    public function setCharset(string $encoding): \Rad\Mail\EmailInterface {
+    public function setCharset(string $encoding): EmailInterface {
         
     }
 
-    public function setFrom(string $from, string $alias = null): \Rad\Mail\EmailInterface {
+    public function setFrom(string $from, string $alias = null): EmailInterface {
         
     }
 
